@@ -1,0 +1,41 @@
+<div class="row justify-content-md-center mt-5">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>Edit Product</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input
+              class="form-control"
+              type="text"
+              formControlName="title"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input
+              class="form-control"
+              type="text"
+              formControlName="price"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input
+              class="form-control"
+              type="text"
+              formControlName="image"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
